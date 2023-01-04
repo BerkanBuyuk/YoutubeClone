@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className='w-6/12 flex items-center space-x-4'>
         <div className='w-3/4 flex items-center'>
-          <input className='border p-2 h-10 flex-1' type="text" placeholder='Ara' />
+          <input className='outline-none border p-2 h-10 flex-1' type="text" placeholder='Ara' />
           <div className='bg-gray-100 h-10 w-20 flex items-center justify-center border'>
             <icons.search className='icon-style'/>
           </div>
