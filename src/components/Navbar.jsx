@@ -21,8 +21,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className='w-3/12 flex items-center justify-end space-x-5'>
-        <icons.video className='icon-style'/>
-        <icons.notification className='icon-style'/>
+        <icons.video className='icon-style text-2xl'/>  
+        <icons.notification className='icon-style text-2xl'/>
         <div className='w-10 h-10 bg-gray-200 rounded-full'></div>
       </div>
     </div>
