@@ -1,14 +1,17 @@
+
 import axios from "axios";
 
-const homeAction = (data) => async (dispatch) => {
+const searchAction = (keyword) => async (dispatch) => {
   try {
     const options = {
         method: 'GET',
         url: 'https://youtube-v31.p.rapidapi.com/search',
         params: {
-            part: 'snippet', 
-            maxResults: '50',
-            q: data
+          q: keyword,
+          part: 'snippet,id',
+          regionCode: 'US',
+          maxResults: '50',
+          order: 'date'
         },
         headers: {
           'X-RapidAPI-Key': 'Burada Api key var.',
@@ -17,7 +20,7 @@ const homeAction = (data) => async (dispatch) => {
       };
       
       await axios.request(options).then(function (response) {
-          dispatch({type: 'GET_VIDEOS', payload: response.data})
+          dispatch({type: 'GET_SEARCH', payload: response.data})
       }).catch(function (error) {
           console.error(error);
       });
@@ -25,4 +28,4 @@ const homeAction = (data) => async (dispatch) => {
     console.log(error);
   }
 };
-export default homeAction;
+export default searchAction;

@@ -7,7 +7,7 @@ const detailAction = (id) => async (dispatch) => {
         url: 'https://youtube-v31.p.rapidapi.com/videos',
         params: {part: 'contentDetails,snippet,statistics', id: '7ghhRHRP6t4'},
         headers: {
-          'X-RapidAPI-Key': 'Burada api key var.',
+          'X-RapidAPI-Key': 'Burada Api key var.',
           'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
         }
       };
