@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="videos/:id" element={<Detail />} />
-          <Route path="search/: keyword" element={<Search />} />
+          <Route path="search/:keyword" element={<Search />} />
         </Routes>
         </PageContainer>
       </BrowserRouter>

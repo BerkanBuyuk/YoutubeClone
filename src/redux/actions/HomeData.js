@@ -11,7 +11,7 @@ const homeAction = (data) => async (dispatch) => {
             q: data
         },
         headers: {
-          'X-RapidAPI-Key': 'Burada API KEY var.',
+          'X-RapidAPI-Key': 'Burada api key var.',
           'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
         }
       };
